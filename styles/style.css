@@ -42,12 +42,16 @@ body{
     margin-bottom: 80px;
     font-size: 46px;
     font-weight: 600;
+    text-align: center;
   }
 
 .section-description{
     font-size: 15px;
     line-height: 28px;
     color: #666666;
+    font-family: "Raleway", serif;
+    text-align: center;
+    padding: 10px 30px;
 }
 .btn{
     padding: 10px 30px;
@@ -135,7 +139,7 @@ nav ul li a:hover{
 }
 
 .banner-content{
-  justify-content: center;
+  justify-content: first baseline;
   align-items: center;
   width: 640px;
   height: 330px;
@@ -160,8 +164,91 @@ nav ul li a:hover{
   margin: 0px 0px 0px 50px;
 }
 
+/* ==========Standard Curriculum================= */
+
+.card-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.card-item{
+  width: 340px;
+  border-radius: 10px;
+
+}
+.card-1{
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(180deg, #b9eaec, #edf1f3);
+}
 
 
+.card-2{
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(180deg, #faf9bb, #edf1f3);
+}
+.card-3{
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(180deg, #9fb3f3, #edf1f3);
+}
+
+.card-title{
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.card-img{
+  padding-left: 100px;
+  padding-top: 20px;
+}
+.read-more{
+  font-weight: 600;
+  text-align: center;
+}
+
+.arrows-container{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.array-left{
+  background: orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.fa-angle-left{
+  color: #ffffff;
+  transform: translate(1.0rem, .9rem);
+  font-size: 25px;
+
+}
+.array-right{
+  background: orange;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+}
+.fa-angle-right{
+  color: #ffffff;
+  transform: translate(1.1rem, .8rem);
+  font-size: 25px;
+
+}
+.our-story{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.story-1{
+  grid-template-rows: 2, 2fr;
+}
 
 
 
@@ -188,11 +275,64 @@ nav ul li a:hover{
   display: none;
 }
 .line{
-  display: block;
+  display: inline-block;
+  margin-bottom: 12.5rem;
 }
 
-.navbar{
+/* ======banner ======= */
+.banner{
+  flex-direction: column-reverse;
 
+ 
+}
+
+.banner-content{
+  text-align: center;
+  width: 400px;
+  justify-content: center;
+  margin-left: 3.9rem;
+  padding-left: 1.5rem;
+ 
+}
+.banner-heading{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+.banner-description{
+  font-size: 16px;
+  margin: 20px 0px;
+}
+.banner-kid{
+  width: 375px;
+  height: 400px;
+ margin-left: 4.9rem;
+ margin-top: 5.9rem;
+  
+}
+
+/* ==============card================ */
+.card-items{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+.card-item{
+  width: 340px;
+  border-radius: 10px;
+  
+}
+.section-title{
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.arrows-container{
+  display: none;
 }
 
 }
