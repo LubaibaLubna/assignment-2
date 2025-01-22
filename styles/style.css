@@ -1,4 +1,9 @@
 body{
+    background: url(../images/bg.png);
+    max-width: 1160px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -18,6 +23,18 @@ body{
 
   /*================ Shared Style============== */
 
+  .orange{
+    color: #FEA301;
+  }
+  .sky-blue{
+    color: #01ACFD;
+  }
+  .light-sky{
+    color: #05D4DF;
+  }
+  .purple{
+    color: #5D58EF;
+  }
   .display-flex{
     display: flex;
   }
@@ -33,18 +50,28 @@ body{
     color: #666666;
 }
 .btn{
-    padding: 5px 10px;
+    padding: 10px 30px;
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
     background-color: black;
-    color: white;
+    color: #f7f7f7;
+    border: none;
+}
+.btn:hover{
+    background: #05D4DF;
+    transition: .3s;
+    color: black;
+    cursor: pointer;
 }
 
 /* ==============Navbar Style============= */
 .navbar{
     justify-content: space-between;
+    padding: 20px 0px;
+
 }
+
 .nav-item{
     list-style: none;
     margin-right: 30px;
@@ -54,3 +81,119 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
+.home{
+  font-weight: 600;
+}
+.nav-btn{
+    background-color: #FEA301;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-top: 10px;
+}
+nav ul li a:hover{
+  color: #666666;
+  transition: .3s;
+}
+.nav-btn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.school{
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.logo{
+  height: 60px;
+}
+
+
+#menu-icon{
+  font-size: 36px;
+  color: black;
+  display: none;
+}
+.line{
+  display: none;
+  width: 100%;
+  height: 1px;
+  background: orange;
+  
+}
+
+/* =======Banner========= */
+.banner{
+  display: flex;
+  height: 575px;
+}
+
+.banner-content{
+  justify-content: center;
+  align-items: center;
+  width: 640px;
+  height: 330px;
+  margin-top: 100px;
+ 
+}
+.banner-heading{
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+.banner-description{
+  font-size: 20px;
+  margin: 24px 0px;
+}
+.banner-kid{
+  width: 470px;
+  height: 575px;
+  margin: 0px 0px 0px 50px;
+}
+
+
+
+
+
+
+
+/* ====Responsive media query======= */
+@media screen and (max-width: 576px){
+
+  #menu-icon{
+    display: block;
+    margin-right: 1.1rem;
+  }
+  .logo{
+    margin-left: 1.1rem;
+    height: 3.1rem;
+  }
+.nav-links, .nav-btn{
+  position: fixed;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  
+}
+.school{
+  display: none;
+}
+.line{
+  display: block;
+}
+
+.navbar{
+
+}
+
+}
+  
