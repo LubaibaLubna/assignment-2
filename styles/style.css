@@ -242,15 +242,79 @@ nav ul li a:hover{
   font-size: 25px;
 
 }
+
+/* ================================Our Story========================================== */
 .our-story{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  margin-bottom: 80px;
+
+
+}
+.row{
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .story-1{
-  grid-template-rows: 2, 2fr;
+  width: 540px;
+  margin: 0px 10px;
+}
+.row img{
+  border-radius: 10px 10px 0px 0px;
+}
+.stories{
+  width: 290px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.story-heading{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38px;
+  margin: 40px;
+}
+.story-description{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #666666;
+  margin: 40px;
+}
+.story-title{
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 28px;
+  color: #070000;
+  margin: 30px;
 }
 
+.story-btn{
+   padding: 15px 30px ;
+   border-radius: 30px;
+   border: none;
+   background: #05D4DF;
+   translate: 30px -30px;
+   color: #ffffff;
+}
 
+.story-btn:hover{
+  background-color: #070000;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn-2 {
+  background: #5D58EF;
+}
+.btn-3{
+  background: olive;
+
+}
+
+.btn-4{
+  background: plum;
+}
 
 
 /* ====Responsive media query======= */
