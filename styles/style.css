@@ -134,6 +134,14 @@ nav ul li a:hover{
   
 }
 
+marquee{
+  font-size: 28px;
+  font-weight: 600;
+  background-color: #ffffff;
+  width: 60%;
+ 
+}
+
 /* =======Banner========= */
 .banner{
   display: flex;
