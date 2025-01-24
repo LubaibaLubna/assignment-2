@@ -317,11 +317,11 @@ marquee{
    color: #ffffff;
 }
 
-.story-btn:hover{
+/* .story-btn:hover{
   background-color: #070000;
   cursor: pointer;
   transition: .4s;
-}
+} */
 
 .btn-2 {
   background: #5D58EF;
