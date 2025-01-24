@@ -1,7 +1,5 @@
 body{
-    background: url(../images/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0 auto;
 
 }
 
@@ -9,10 +7,7 @@ header{
   max-width: 1160px;
   margin: 0 auto;
 }
-main{
-  max-width: 1160px;
-  margin: 0 auto;
-}
+
 
 .quicksand-regular {
     font-family: "Quicksand", serif;
@@ -172,7 +167,10 @@ nav ul li a:hover{
 }
 
 /* ==========Standard Curriculum================= */
-
+.container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
 .card-items{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -251,14 +249,19 @@ nav ul li a:hover{
 }
 
 /* ================================Our Story========================================== */
+.story-section{ 
+  background-size: cover;
+  background-image: url(../images/bg.png), linear-gradient(#ffe1ab1f, #ffe1ab2b, #ffe28d69, #fe8d0130);
+}
 .our-story{
   display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
   margin-bottom: 80px;
-
 
 }
 .row{
-  
+  width: 290px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -270,7 +273,6 @@ nav ul li a:hover{
   border-radius: 10px 10px 0px 0px;
 }
 .stories{
-  width: 290px;
   gap: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -295,7 +297,9 @@ nav ul li a:hover{
   color: #070000;
   margin: 30px;
 }
-
+.title{
+  padding-top: 60px;
+}
 .story-btn{
    padding: 15px 30px ;
    border-radius: 30px;
@@ -326,16 +330,15 @@ nav ul li a:hover{
 .view-all{
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  padding-bottom: 60px;
 }
 /* ======================footer section======================= */
-
 .footer-section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: #01ACFD;
   padding: 50px 0px;
-  
+  margin: 0;
 }
 .footer-links{
   display: grid;
@@ -372,9 +375,8 @@ nav ul li a:hover{
 .links li{
   list-style: none;
   margin-bottom: 20px;
-  
-
 }
+
 .links li a{
   text-decoration: none;
   color: #ffffff;
@@ -477,10 +479,9 @@ footer{
 }
 
 .stories{
-  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0px 20px;
+  margin-left: 68px;
 
 }
 
@@ -497,6 +498,7 @@ footer{
 .row{
   width: 200px;
  
+  
 }
 .row img{
   width: 100%;
